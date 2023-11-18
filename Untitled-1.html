@@ -10,28 +10,73 @@
 </head>
 
 <body>
-	<header>
-		<a href="#">
-			<img class="logo" src="assets/img/logo.png" alt="logo">
+	<header class="header">
 
+
+		<a href="#" class="logo">
+			<img src="assets/img/logo.png">
 		</a>
-		<nav>
-			<ul class="nav_links">
-				<li><a href="#call">تماس با ما</a></li>
-				<li><a href="#">درباره ما</a></li>
-				<li><a href="#li">لیست ارز ها</a></li>
-				<li><a href="#call">مجوز‌ها</a></li>
-			</ul>
+
+
+		<input type="checkbox" id="check">
+		<label for="check" class="icons">
+			<i class="fas fa-bars" id="menu-icon"></i>
+			<i class="fas  fa-x" id="close-icon" alt="logo"></i>
+		</label>
+
+		<nav class="navbar">
+			<a href="#call" style="--i:0;">تماس با ما</a>
+			<a href="#why" style="--i:1;">درباره ما</a>
+			<a href="#li" style="--i:2;">لیست ارز ها</a>
+			<a href="#call" style="--i:3;">مجوز‌ها</a>
 		</nav>
-		<button class="cta"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
-		<button class="cta">ورود / ثبت نام</button>
+
+		<div class="icon-cart">
+			<button class="cta1"><a href="#"><i class="fa fa-shopping-cart"></i></a>
+				<span>0</span>
+			</button>
+		</div>
+		<button class="cta2">ورود / ثبت نام</button>
 	</header>
 
 	<div class="container1">
 		<img src="assets/img/banner.jpg">
 	</div>
-	<div class="tit1">
-		<p>چرا پلتفرم ثمین کوین را برای<br>خرید ارز دیجیتال انتخاب کنیم؟!</p>
+
+	
+
+	<div class="slidebar">
+
+		<div class="img-slider">
+			<div class="slide active">
+				<img src="assets/img/slide 1.jpg" alt="">
+				<div class="info">
+				</div>
+			</div>
+
+			<div class="slide">
+				<img src="assets/img/slide2.jpg" alt="">
+				<div class="info">
+				</div>
+			</div>
+
+			<div class="slide">
+				<img src="assets/img/slide3.jpg" alt="">
+				<div class="info">
+				</div>
+			</div>
+
+			<div class="navi">
+				<div class="btn active"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+			</div>
+		</div>
+	</div>
+	<div class="titt">
+		<div class="tit1">
+			<p id="why">چرا پلتفرم ثمین کوین را برای<br>خرید ارز دیجیتال انتخاب کنیم؟!</p>
+		</div>
 	</div>
 
 	<div class="why">
@@ -86,7 +131,7 @@
 	</div>
 
 	<div class="world">
-		
+
 	</div>
 
 	<div class="c-table">
@@ -107,13 +152,13 @@
 							<td>1,301,580,000</td>
 							<td>2,603,160,000</td>
 							<td class="red"> 0.67%</td>
-                             <td><button class="table-btn">خرید/فروش</button></td>
+							<td><button class="table-btn">خرید/فروش</button></td>
 						</tr>
 						<tr>
 							<td><img src="assets/img/coins/usdt2.svg">تتر/USDT</td>
 							<td>50,190</td>
 							<td>5,921,918,100</td>
-							<td class="green">  0.02%</td>
+							<td class="green"> 0.02%</td>
 							<td><button class="table-btn">خرید/فروش</button></td>
 						</tr>
 						<tr>
@@ -134,7 +179,7 @@
 							<td><img src="assets/img/coins/shib5.svg">شیبا/SHIB</td>
 							<td>0.383</td>
 							<td>1,549,216,546</td>
-							<td class="green">  0.16%</td>
+							<td class="green"> 0.16%</td>
 							<td><button class="table-btn">خرید/فروش</button></td>
 						</tr>
 						<tr>
@@ -162,7 +207,7 @@
 							<td><img src="assets/img/coins/matic9.svg">متیک/MATIC</td>
 							<td>26,964</td>
 							<td>1,906,516,584</td>
-							<td class="red">  1.11%</td>
+							<td class="red"> 1.11%</td>
 							<td><button class="table-btn">خرید/فروش</button></td>
 						</tr>
 						<tr>
@@ -190,7 +235,7 @@
 							<td><img src="assets/img/coins/doge13.svg">دوج/DOGE</td>
 							<td>3,191</td>
 							<td>1,362,368,731</td>
-							<td class="green">  0.73%</td>
+							<td class="green"> 0.73%</td>
 							<td><button class="table-btn">خرید/فروش</button></td>
 						</tr>
 						<tr>
@@ -253,7 +298,7 @@
 							<td><img src="assets/img/coins/ada22.svg">کاردانو/ADA</td>
 							<td>12,737</td>
 							<td>674,207,621</td>
-							<td class="green">  0.17%</td>
+							<td class="green"> 0.17%</td>
 							<td><button class="table-btn">خرید/فروش</button></td>
 						</tr>
 						<tr>
@@ -279,34 +324,37 @@
 
 	<footer class="footer">
 		<div class="footer-right">
-		  <img src="assets/img/logo.png" width="25%">
-		  <p>ثمین کوین را دنبال کنید</p>
-		<div class="socials">
-		  <a href="#"><i class="fa fa-facebook"></i></a> 
-		  <a href="#"><i class="fa fa-instagram"></i></a>
-		  <a href="#"><i class="fa fa-twitter"></i></a>
-		  <a href="#"><i class="fa fa-linkedin"></i></a>
-		  <a href="#"><i class="fa fa-telegram"></i></a>
-		</div>
+			<img src="assets/img/logo.png" width="25%">
+			<p>ثمین کوین را دنبال کنید</p>
+			<div class="socials">
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-telegram"></i></a>
+			</div>
 		</div>
 		<ul class="footer-left">
-			 <li class="neshan">
-              <img src="assets/img/etehad.webp" width="25px" height="25px">
-			  <img src="assets/img/neshan.webp">
-			   <img src="assets/img/etemad.png">
-			 </li>
-			 <li>
+			<li class="neshan">
+				<img src="assets/img/etehad.webp" width="25px" height="25px">
+				<img src="assets/img/neshan.webp">
+				<img src="assets/img/etemad.png">
+			</li>
+			<li>
 				<h2 id="call">تماس با ما</h2>
-			 <ul class="box">
-				<li><a href="#">09119991008</a></li>
-				<li><a href="#">alireza.soltanian1998@yahoo.com</a></li>
-				<li><a href="#">بابل،میدان اوقاف،خیابان شریعتی،ساختمان آپادانا</a></li>
-			  </ul>
-			  </li>
+				<ul class="box">
+					<li><a href="#">09119991008</a></li>
+					<li><a href="#">alireza.soltanian1998@yahoo.com</a></li>
+					<li><a href="#">بابل،میدان اوقاف،خیابان شریعتی،ساختمان آپادانا</a></li>
+				</ul>
+			</li>
 		</ul>
-	  </footer>
+	</footer>
 
-
+	<script src="assets/script.js"></script>
 </body>
 
 </html>
+
+
+
